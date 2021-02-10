@@ -1,0 +1,16 @@
+#drawing_pad{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+.square{
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+}
+.squareBorder{
+    border: 1px solid grey;
+}
