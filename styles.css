@@ -1,16 +1,32 @@
 #drawing_pad{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    display: inline-grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    /*flex-wrap: wrap;
+    align-content: flex-start;*/
     width: 500px;
     height: 500px;
     border: 2px solid black;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 .square{
     box-sizing: border-box;
-    width: 20px;
-    height: 20px;
+   /* width: 20px;
+    height: 20px;*/
 }
 .squareBorder{
     border: 1px solid grey;
+}
+#clear_pad{
+    border: 2px solid black;
+    width: 60px;
+}
+#pen_cont{
+    border: 2px solid black;
+    width: 200px;
+}
+#cont{
+    display: flex;
+    flex-wrap: wrap;
 }

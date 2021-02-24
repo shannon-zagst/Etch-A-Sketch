@@ -1,13 +1,74 @@
 <!DOCTYPE html>
+
 <head>
-<title>Etch-A-Sketch</title>
-<link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
+
 <body>
-<h1>Etch-A-Sketch</h1>
+    <h1>Etch-A-Sketch</h1>
+<div id="cont">
+    <div id="pen_cont">
+        <form>
+            <h2>Pen Color</h2>
+            <input type="radio" id="pen_black" name="pen_color" value="rgb(0, 0, 0)" checked/>
+                <label for="pen_black">Black</label><br />
+            <input type="radio" id="pen_red" name="pen_color" value="rgb(255, 0, 0)" />
+                <label for="pen_red">Red</label><br />
+            <input type="radio" id="pen_erase" name="pen_color" value="erase" />
+                <label for="pen_erase">Erase</label><br />
+            <!--<input type="radio" id="pen_picker" name="pen_color" value="pick" />
+                <label for="pen_picker">Color Picker</label>-->
+             <input type="color" id="pen_pick" name="pen_color" /><br />
+            <input type="radio" id="pen_rainbow" name="pen_color" value="rainbow" />
+                <label for="pen_rainbow">Rainbow</label><br />
+            <input type="radio" id="pen_warm" name="pen_color" value="warm" />
+                <label for="pen_warm">Warm</label><br />
+            <input type="radio" id="pen_cold" name="pen_color" value="cold" />
+                <label for="pen_cold">Cold</label><br />
+            <input type="radio" id="pen_random" name="pen_color" value="random" />
+                <label for="pen_random">Random</label><br />
+            <input type="radio" id="pen_sketch" name="pen_color" value="sketch" />
+                <label for="pen_sketch">Sketch</label><br />
+            <input type="radio" id="pen_darken" name="pen_color" value="darken" />
+                <label for="pen_darken">Darken</label><br />
+            <input type="radio" id="pen_lighten" name="pen_color" value="lighten" />
+                <label for="pen_lighten">Lighten</label><br />
+        </form>
 
-<div id="drawing_pad"></div>
+        <form>
+            <h2>Background Color</h2>
+            <input type="radio" id="bg_white" name="bg_color" value="rgb(255, 255, 255)" checked/>
+            <label for="bg_white">White</label><br />
+            <input type="radio" id="bg_yellow" name="bg_color" value="rgb(255, 255, 0)" />
+            <label for="bg_yellow">Yellow</label><br />
+            <!--<input type="radio" id="bg_picker" name="bg_color" value="pick" />
+            <label for="bg_picker">Color Picker</label>-->
+            <input type="color" id="bg_pick" name="bg_color" value="#FFFFFF" /><br />
+            
+        </form>
 
-<script src="index.js"></script>
+      <form>
+          <h2>Grid</h2>
+          <input type="checkbox" id="grid_on" name="grid" value="grid" checked/>
+          <label for="grid_on">Grid On</label><br />
+      </form>
+            <h2>Clear Drawing Pad</h2>
+            <div id="clear_pad">Clear</div>
+<button id="g10">10x10 grid</button>
+<button id="g20">20x20 grid</button>
+<button id="g25">25x25 grid</button>
+<button id="g50">50x50 grid</button>
+<button id="g100">100x100 grid</button>
+
+<h2>Zoom</h2>
+<button id="zoom_in">Zoom In</button>
+    </div>
+
+
+    <div id="drawing_pad"></div>
+</div>
+    <script src="index.js"></script>
 </body>
+
 </html>
